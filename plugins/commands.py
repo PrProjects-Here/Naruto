@@ -44,7 +44,7 @@ async def start(client, message):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
-        ], [InlineKeyboardButton('🔍 Search', ]
+        ], [InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''), InlineKeyboardButton('📌 Other Bots', url='telegram.me/YoutubeVideoDownloaderService/70')]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
@@ -71,21 +71,22 @@ async def start(client, message):
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
             chat_id=message.from_user.id,
-            text="**Please Join My Updates Channel to use this Bot!**",
+            text="**Join My Updates Channel to Use Me!**",
             reply_markup=InlineKeyboardMarkup(btn),
             parse_mode="markdown"
             )
         return
     if len(message.command) ==2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('➕ Add Me To Your Group', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
             ],[
-            InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/EvaMariaUpdates')
+            InlineKeyboardButton('♻️ Updates Channel', url='https://t.me/YoutubeVideoDownloaderService'),
+            InlineKeyboardButton('👥 Support Group', url='https://t.me/VCMusicGroup')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
-        ]]
+        ], [InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''), InlineKeyboardButton('📌 Other Bots', url='telegram.me/YoutubeVideoDownloaderService/70')]]
+        reply_markup = InlineKeyboardMarkup(buttons)
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(
             photo=random.choice(PICS),
