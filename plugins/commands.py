@@ -208,7 +208,7 @@ async def delete(bot, message):
 @Client.on_message(filters.command('deleteall') & filters.user(ADMINS))
 async def delete_all_index(bot, message):
     await message.reply_text(
-        'This will delete all indexed files.\nDo you want to continue??',
+        '**This will delete all indexed files.\nDo you want to continue??**',
         reply_markup=InlineKeyboardMarkup(
             [
                 [
