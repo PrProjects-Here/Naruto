@@ -17,7 +17,7 @@ from info import ADMINS
 async def addfilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"**You are anonymous admin. Use /connect {message.chat.id} in PM**")
     chat_type = message.chat.type
     args = message.text.html.split(None, 1)
 
@@ -29,10 +29,10 @@ async def addfilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("**Make Sure I'm Present in your group!!**", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("**I'm Not Connected To Any Groups!**", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
@@ -122,7 +122,7 @@ async def get_all(client, message):
     chat_type = message.chat.type
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"**You are anonymous admin. Use** `/connect {message.chat.id}` **in PM**")
     if chat_type == "private":
         userid = message.from_user.id
         grpid = await active_connection(str(userid))
@@ -132,10 +132,10 @@ async def get_all(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("**Make sure I'm present in your group!!**", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("**I'm not connected to any groups!**", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
@@ -184,7 +184,7 @@ async def get_all(client, message):
 async def deletefilter(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"**You are anonymous admin. Use** `/connect {message.chat.id}` **in PM**")
     chat_type = message.chat.type
 
     if chat_type == "private":
@@ -195,10 +195,10 @@ async def deletefilter(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("**Make sure I'm present in your group!!**", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("**I'm not connected to any groups!**", quote=True)
 
     elif chat_type in ["group", "supergroup"]:
         grp_id = message.chat.id
@@ -235,7 +235,7 @@ async def deletefilter(client, message):
 async def delallconfirm(client, message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"**You are anonymous admin. Use** `/connect {message.chat.id}` **in PM**")
     chat_type = message.chat.type
 
     if chat_type == "private":
@@ -246,10 +246,10 @@ async def delallconfirm(client, message):
                 chat = await client.get_chat(grpid)
                 title = chat.title
             except:
-                await message.reply_text("Make sure I'm present in your group!!", quote=True)
+                await message.reply_text("**Make sure I'm present in your group!!**", quote=True)
                 return
         else:
-            await message.reply_text("I'm not connected to any groups!", quote=True)
+            await message.reply_text("**I'm not connected to any groups!**", quote=True)
             return
 
     elif chat_type in ["group", "supergroup"]:
@@ -264,8 +264,8 @@ async def delallconfirm(client, message):
         await message.reply_text(
             f"This will delete all filters from '{title}'.\nDo you want to continue??",
             reply_markup=InlineKeyboardMarkup([
-                [InlineKeyboardButton(text="YES",callback_data="delallconfirm")],
-                [InlineKeyboardButton(text="CANCEL",callback_data="delallcancel")]
+                [InlineKeyboardButton(text="✅ Yes",callback_data="delallconfirm")],
+                [InlineKeyboardButton(text="🚫 Cancel",callback_data="delallcancel")]
             ]),
             quote=True
         )
