@@ -9,7 +9,7 @@ logger.setLevel(logging.ERROR)
 async def addconnection(client,message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"**You are anonymous admin. Use** `/connect {message.chat.id}` *in PM*")
     chat_type = message.chat.type
 
     if chat_type == "private":
@@ -34,7 +34,7 @@ async def addconnection(client,message):
             and st.status != "creator"
             and str(userid) not in ADMINS
         ):
-            await message.reply_text("You should be an admin in Given group!", quote=True)
+            await message.reply_text("**You should be an admin in Given group!**", quote=True)
             return
     except Exception as e:
         logger.exception(e)
@@ -80,7 +80,7 @@ async def addconnection(client,message):
 async def deleteconnection(client,message):
     userid = message.from_user.id if message.from_user else None
     if not userid:
-        return await message.reply(f"You are anonymous admin. Use /connect {message.chat.id} in PM")
+        return await message.reply(f"**You are anonymous admin. Use** `/connect {message.chat.id}` **in PM**")
     chat_type = message.chat.type
 
     if chat_type == "private":
