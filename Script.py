@@ -6,7 +6,7 @@ class script(object):
 <b>Made With ❤️ BY @YoutubeVideoDownloaderService</b>"""
     HELP_TXT = """<b>Hey {}
 Here Is The Help For MY COMMANDS</b>"""
-    ABOUT_TXT = """<b>🤖 Bot : <a href='telegram.me/TheNarutoroRoBot'>ɴᴀʀᴜᴛᴏ ʙᴏᴛ</a>
+    ABOUT_TXT = """<b>🤖 Bot : <a href='telegram.me/TheNarutoRoBot'>ɴᴀʀᴜᴛᴏ ʙᴏᴛ</a>
 
 🧑🏻‍💻 Developer : <a href='t.me/TronManTRONIC'>ᴘɪʏᴜꜱʜ ʀᴀᴊ 🇮🇳</a>
 
