@@ -440,7 +440,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
-        ], [InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''), InlineKeyboardButton('📌 Other Bots', url='telegram.me/YoutubeVideoDownloaderService/70)]]
+        ], [InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''), InlineKeyboardButton('📌 Other Bots', url='telegram.me/YoutubeVideoDownloaderService/70')]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
             text=script.START_TXT.format(query.from_user.mention, temp.U_NAME, temp.B_NAME),
