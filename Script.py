@@ -1,7 +1,7 @@
 class script(object):
-    START_TXT = """𝙷i {},
+    START_TXT = """Hi {},
 
-__Iam Naruto A Telegram Bot I Can Provide Movies,Auto Filter, Manual Filter You Can Search Movies via Inline Mode Click On Help For More Useful Features I Can Also Add Filters In Your Group Just Add Me To Your Group And Enjoy__
+<i>Iam Naruto A Telegram Bot I Can Provide Movies,Auto Filter, Manual Filter You Can Search Movies via Inline Mode Click On Help For More Useful Features I Can Also Add Filters In Your Group Just Add Me To Your Group And Enjoy__
 
 **Made With ❤️ BY @YoutubeVideoDownloaderService**"""
     HELP_TXT = """**Hey {}
