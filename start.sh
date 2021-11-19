@@ -1,7 +1,7 @@
 if [ -z $UPSTREAM_REPO ]
 then
   echo "Cloning main Repository"
-  git clone https://github.com/PrProjects-Here/Naruto /Naruto
+  git clone https://github.com/PrProjects-Here/Naruto.git /Naruto
 else
   echo "Cloning Custom Repo from $UPSTREAM_REPO "
   git clone $UPSTREAM_REPO /Naruto
