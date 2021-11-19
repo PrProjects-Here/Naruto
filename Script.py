@@ -1,12 +1,12 @@
 class script(object):
     START_TXT = """Hi {},
 
-<i>Iam Naruto A Telegram Bot I Can Provide Movies,Auto Filter, Manual Filter You Can Search Movies via Inline Mode Click On Help For More Useful Features I Can Also Add Filters In Your Group Just Add Me To Your Group And Enjoy__
+<i>Iam Naruto A Telegram Bot I Can Provide Movies,Auto Filter, Manual Filter You Can Search Movies via Inline Mode Click On Help For More Useful Features I Can Also Add Filters In Your Group Just Add Me To Your Group And Enjoy</i>
 
-**Made With ❤️ BY @YoutubeVideoDownloaderService**"""
-    HELP_TXT = """**Hey {}
-Here Is The Help For MY COMMANDS**"""
-    ABOUT_TXT = """**🤖 Bot : [ɴᴀʀᴜᴛᴏ ʙᴏᴛ](https://t.me/TheNarutoroRoBot)
+<b>Made With ❤️ BY @YoutubeVideoDownloaderService</b>"""
+    HELP_TXT = """<b>Hey {}
+Here Is The Help For MY COMMANDS</b>"""
+    ABOUT_TXT = """<b>🤖 Bot : [ɴᴀʀᴜᴛᴏ ʙᴏᴛ](https://t.me/TheNarutoroRoBot)
 
 🧑🏻‍💻 Developer : [ᴘɪʏᴜꜱʜ ʀᴀᴊ 🇮🇳](telegram.me/PiyushrTG)
 
@@ -20,7 +20,7 @@ Here Is The Help For MY COMMANDS**"""
 
 📚 Library : [Pyrogram](pyrogram.org)
 
-📡  Server : [Heroku](heroku.com)**"""
+📡  Server : [Heroku](heroku.com)</b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 [Click Here](t.me/SourceCodetg) 
 """
