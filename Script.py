@@ -6,21 +6,21 @@ class script(object):
 <b>Made With ❤️ BY @YoutubeVideoDownloaderService</b>"""
     HELP_TXT = """<b>Hey {}
 Here Is The Help For MY COMMANDS</b>"""
-    ABOUT_TXT = """<b>🤖 Bot : [ɴᴀʀᴜᴛᴏ ʙᴏᴛ](https://t.me/TheNarutoroRoBot)
+    ABOUT_TXT = """<b>🤖 Bot : <a href='telegram.me/TheNarutoroRoBot'>ɴᴀʀᴜᴛᴏ ʙᴏᴛ</a>
 
-🧑🏻‍💻 Developer : [ᴘɪʏᴜꜱʜ ʀᴀᴊ 🇮🇳](telegram.me/PiyushrTG)
+🧑🏻‍💻 Developer : <a href='t.me/TronManTRONIC'>ᴘɪʏᴜꜱʜ ʀᴀᴊ 🇮🇳</a>
 
-📣 Updates Channel : [ᴘɪʏᴜꜱʜ ᴘʀᴏᴊᴇᴄᴛꜱ™](telegram.me/YoutubeVideoDownloaderService)
+📣 Updates Channel : <a href='telegram.dog/YoutubeVideoDownloaderService'>ᴘɪʏᴜꜱʜ ᴘʀᴏᴊᴇᴄᴛꜱ™</a>
 
-👥 Support Group : [ᴘʀ ᴘʀᴏᴊᴇᴄᴛ ꜱᴜᴘᴘᴏʀᴛ™](https://t.me/VCMusicGroup)
+👥 Support Group : <a href='telegram.dog/VCMusicGroup'>ᴘʀ ᴘʀᴏᴊᴇᴄᴛ ꜱᴜᴘᴘᴏʀᴛ™</a>
 
-💻 Source Code : [Click here](https://t.me/SourceCodetg)
+💻 Source Code : <a href='t.me/SourceCodetg'>Click Here</a>
 
-🎧 Language : [Python3](python.org)
+🎧 Language : <a href='python.org'>Python3</a>
 
-📚 Library : [Pyrogram](pyrogram.org)
+📚 Library : <a href='pyrogram.org'>Pyrogram</a>
 
-📡  Server : [Heroku](heroku.com)</b>"""
+📡 Server : <a href='heroku.com'>Heroku</a></b>"""
     SOURCE_TXT = """<b>NOTE:</b>
 [Click Here](t.me/SourceCodetg) 
 """
